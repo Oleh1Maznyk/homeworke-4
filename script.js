@@ -1,16 +1,14 @@
-const pElement = document.getElementById("p-element")
-const button = document.getElementById("calkulate")
-const startText = pElement.innerText
+const button = document.getElementById("myResult")
+const myNumber = document.getElementById("myNumber")
+const square = document.getElementById("square")
 
+const resultSquare = document.getElementById("squareNum")
 
-const myNumber = document.getElementById("Number")
-const resultSquare = document.getElementById("square")
-const resultCube = document.getElementById("cube")
 const result = document.getElementById("result")
 
-const square = (num) => num * num
+const squareNumber = (num) => num * num
 
 result.addEventListener("click", function () {
-    let myNum = parseInt(myNumber.velue)
-    resultSquare.innerText = `${myNum} до кубу = ${square(num)}`
+    let num = parseInt(myNumber.value)
+    resultSquare.innerText = `Квадрат числа ${num} = ${squareNumber(num)}`
 })
