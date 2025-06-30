@@ -5,15 +5,11 @@ const result = document.getElementById("result")
 const resultSqare = document.getElementById("sqareNum")
 const resultCube = document.getElementById("cubeNum")
 const resultDiv = document.getElementById("divNum")
+const chengeColor = document.getElementById("changeColor")
 
 const sqareNumber = (num) => num ** 2
 const cubeNumber = (num) => num ** 3
 const divNumber = (num) => num % 5
-
-button.addEventListener("click", function () {
-    const myColors = ["red", "blue", "green", "yellow", "purple"]
-    document.body.style.backgroundColor = myColors;
-})
 
 result.addEventListener("click", function () {
     let num = parseInt(myNumber.value)
